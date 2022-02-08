@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 RUN apt update && \
-    apt install -y git wget sudo && \
+    apt install -y git wget sudo curl && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /home/
